@@ -7,7 +7,12 @@ import { ProductsComponent } from './products/products.component';
 import { ReportsComponent } from './reports/reports.component';
 
 @NgModule({
-  declarations: [DashboardComponent, UsersComponent, ProductsComponent, ReportsComponent],
+  declarations: [
+    DashboardComponent,
+    UsersComponent,
+    ProductsComponent,
+    ReportsComponent,
+  ],
   imports: [CommonModule, DashboardRoutingModule],
 })
 export class DashboardModule {}

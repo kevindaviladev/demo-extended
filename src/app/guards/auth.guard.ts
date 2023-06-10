@@ -7,6 +7,6 @@ export class AuthGuard {
 
   canActivate() {
     if (!localStorage.getItem('auth')) this.router.navigate(['/login']);
-    return false;
+    return true;
   }
 }

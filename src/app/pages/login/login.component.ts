@@ -10,7 +10,12 @@ export class LoginComponent {
   constructor(private router: Router) {}
 
   goToDashboard() {
-    localStorage.setItem('auth', 'true');
-    this.router.navigate(['/dashboard']);
+    try {
+      localStorage.setItem('auth', 'true');
+      this.router.navigate(['/dashboard']);
+      
+    } catch (error) {
+      console.error(error);
+    }
   }
 }

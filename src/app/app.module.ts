@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AuthGuard } from './guards/auth.guard';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthInterceptor } from './interceptors/bearer.interceptor';
+import { LoginModule } from './pages/login/login.module';
 
 @NgModule({
   declarations: [AppComponent],
